@@ -1,0 +1,20 @@
+.switch__langs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.lang {
+		margin: 0 10px;
+		padding: 10px 15px;
+		background: #545454;
+		border-radius: 15px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: white;
+
+		&.active {
+			background: #c100ff;
+			box-shadow: 0px 0px 10px purple, 0px 0px 20px purple, 0px 0px 30px purple;
+		}
+	}
+}
