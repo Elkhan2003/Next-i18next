@@ -1,11 +1,12 @@
 import React, { FC } from "react";
 import scss from "./Header.module.scss";
+import { FormattedMessage } from "react-intl";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
 interface linksProps {
 	href: string;
-	label: string;
+	label: any;
 }
 
 const Header: FC = () => {
@@ -14,11 +15,11 @@ const Header: FC = () => {
 	const links: linksProps[] = [
 		{
 			href: "/",
-			label: "Home"
+			label: <FormattedMessage id="page.header.home" />
 		},
 		{
 			href: "/about",
-			label: "About"
+			label: <FormattedMessage id="page.header.about" />
 		}
 	];
 
@@ -32,6 +33,7 @@ const Header: FC = () => {
 								? `${scss.link} ${scss.active}`
 								: `${scss.link}`
 						}
+						key={link.href}
 						href={link.href}
 					>
 						{link.label}
