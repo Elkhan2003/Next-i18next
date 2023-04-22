@@ -1,8 +1,9 @@
 {
+	"page.home.head.title": "Next Language",
+	"page.home.head.meta.description": "Пример i18n в Next.js - Английский",
+	"page.about.head.title": "Next Language",
 	"page.header.home": "Главная",
 	"page.header.about": "О нас",
-	"page.home.head.title": "Пример i18n в Next.js",
-	"page.home.head.meta.description": "Пример i18n в Next.js - Английский",
 	"page.home.title": "Добро пожаловать на <b>домашнюю страницу</b>",
 	"page.home.description": "Вы просматриваете домашнюю страницу на русском языке",
 	"page.about.title": "Обо мне",

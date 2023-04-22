@@ -1,13 +1,17 @@
 import Head from "next/head";
 import React, { FC } from "react";
 import scss from "@/components/pages/Style.module.scss";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const AboutPage: FC = () => {
+	const intl: any = useIntl();
+
+	const title: any = intl.formatMessage({ id: "page.about.head.title" });
+
 	return (
 		<>
 			<Head>
-				<title>About</title>
+				<title>{title}</title>
 			</Head>
 			<div className={scss.home__page}>
 				<h1>

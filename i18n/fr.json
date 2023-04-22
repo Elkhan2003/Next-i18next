@@ -1,8 +1,9 @@
 {
+	"page.home.head.title": "Next Language",
+	"page.home.head.meta.description": "Next.js i18n exemple - Français",
+	"page.about.head.title": "Next Language",
 	"page.header.home": "Accueil",
 	"page.header.about": "À propos de nous",
-	"page.home.head.title": "Next.js i18n exemple",
-	"page.home.head.meta.description": "Next.js i18n exemple - Français",
 	"page.home.title": "Bienvenue sur <b>la page d'accueil</b>",
 	"page.home.description": "Vous consultez actuellement la page d'accueil en français",
 	"page.about.title": "À propos de moi",

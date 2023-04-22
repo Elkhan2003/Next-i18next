@@ -28,13 +28,13 @@ const Header: FC = () => {
 			<div className={scss.header}>
 				{links.map((link) => (
 					<Link
+						key={link.href}
+						href={link.href}
 						className={
 							pathname === link.href
 								? `${scss.link} ${scss.active}`
 								: `${scss.link}`
 						}
-						key={link.href}
-						href={link.href}
 					>
 						{link.label}
 					</Link>
@@ -43,14 +43,14 @@ const Header: FC = () => {
 			<div className={scss.switch__langs}>
 				{[...locales].map((locale) => (
 					<Link
+						key={locale}
+						href={pathname}
+						locale={locale}
 						className={
 							locale === activeLocale
 								? `${scss.lang} ${scss.active}`
 								: `${scss.lang}`
 						}
-						key={locale}
-						href={pathname}
-						locale={locale}
 					>
 						{locale}
 					</Link>
